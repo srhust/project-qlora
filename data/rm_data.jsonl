@@ -1,0 +1,2 @@
+{"prompt": "Explain LoRA", "chosen": "LoRA fine-tunes large models by adding low-rank trainable adapters to selected layers while freezing most original weights.", "rejected": "LoRA is only a random regularization trick and has no clear efficiency advantage."}
+{"prompt": "Why use preference data?", "chosen": "Preference data helps train reward or alignment models to distinguish higher-quality responses from weaker alternatives.", "rejected": "Preference data is useless because all responses should be treated the same during alignment."}

@@ -17,3 +17,21 @@ vector_db/
 venv/
 .vscode/
 .idea/
+__pycache__/
+utils/__pycache__/
+
+# Keep sample datasets and configs tracked
+!data/
+!data/*.jsonl
+!configs/
+!configs/*.yaml
+
+# Ignore generated outputs
+outputs/
+sft_model/
+dpo_model/
+rm_model/
+grpo_model/
+predictions.jsonl
+logs/
+runs/

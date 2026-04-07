@@ -1,0 +1,35 @@
+model_name: Qwen/Qwen2-7B
+dataset_path: data/grpo_data.jsonl
+output_dir: grpo_model
+max_prompt_length: 512
+max_completion_length: 256
+num_generations: 4
+trust_remote_code: true
+load_in_4bit: true
+use_bf16: true
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  bias: none
+  target_modules:
+    - q_proj
+    - v_proj
+
+training:
+  per_device_train_batch_size: 1
+  gradient_accumulation_steps: 8
+  learning_rate: 0.00005
+  lr_scheduler_type: cosine
+  warmup_ratio: 0.03
+  num_train_epochs: 1
+  logging_steps: 10
+  save_steps: 100
+  save_total_limit: 2
+  eval_strategy: "no"
+  report_to: none
+  optim: paged_adamw_8bit
+  weight_decay: 0.0
+  max_grad_norm: 1.0
+  seed: 42

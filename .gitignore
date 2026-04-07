@@ -1,0 +1,19 @@
+# 忽略 Python 缓存
+__pycache__/
+*.py[cod]
+
+# 忽略数据集文件夹（根据你的实际命名修改）
+data/
+datasets/
+*.json
+*.csv
+
+# 忽略向量库和索引文件
+*.index
+vector_db/
+
+# 忽略环境文件和密钥
+.env
+venv/
+.vscode/
+.idea/

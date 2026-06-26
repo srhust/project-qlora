@@ -7,7 +7,7 @@
     "HTTPS_PROXY": "http://127.0.0.1:7890",
     "NO_PROXY": "localhost,127.0.0.1",
     "ANTHROPIC_BASE_URL": "https://api.deepseek.com/anthropic",
-    "ANTHROPIC_AUTH_TOKEN": "sk-5aca94b0d1ff4dc5866594592f43f4fa",
+    "ANTHROPIC_AUTH_TOKEN": "",
     "ANTHROPIC_MODEL": "deepseek-v4-pro[1m]",
     "ANTHROPIC_DEFAULT_OPUS_MODEL": "deepseek-v4-pro[1m]",
     "ANTHROPIC_DEFAULT_SONNET_MODEL": "deepseek-v4-pro[1m]",
